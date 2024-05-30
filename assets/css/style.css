@@ -1,0 +1,128 @@
+body {
+  background-color: #ede8f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  > ul {
+    display: flex;
+    > li {
+      padding: 10px;
+      margin: 0 10px;
+      list-style-type: none;
+      > a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    > li:hover {
+      background-color: #ede8f5;
+    }
+    > .active {
+      background-color: #ede8f5;
+    }
+  }
+}
+.imgSize {
+  height: 100px;
+  width: 100px;
+}
+.container {
+  background-color: #8697c4;
+  > .navbar {
+    justify-content: space-between;
+  }
+}
+.homeContent {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+}
+.jobExperince {
+  > h5 {
+    margin-bottom: 0;
+  }
+  > p {
+    margin-top: 0;
+  }
+}
+.certLink {
+  display: none;
+}
+@media (max-width: 500px) {
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: block !important;
+  }
+  .homeContent {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2%;
+  }
+  .logo {
+    /* display: none; */
+  }
+  .certs {
+    display: none;
+  }
+  .certLink {
+    display: block;
+  }
+  .liCert {
+    margin: 0 0 20px 0;
+  }
+}
+.certHolder {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 2%;
+  > article {
+    display: grid;
+    grid-template-rows: auto auto;
+    color: #000;
+  }
+}
+.cert {
+  width: 100%;
+}
+.contactMe {
+  margin-top: 20vh;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 2%;
+}
+.contactForm {
+  display: grid;
+  > .message {
+    height: 15vh;
+  }
+  > button {
+    background-color: #8697c4;
+    height: 8vh;
+    font-size: large;
+  }
+  > button:hover {
+    background-color: bisque;
+  }
+}
+.hidden {
+  display: none;
+}
+.certification-projects {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 2%;
+}
+.schoolInfo{
+  margin-top: 0;
+}
