@@ -9,11 +9,7 @@
   <body>
     <header class="container">
       <nav class="navbar">
-        <img
-          src="assets/imgs/logo.png"
-          alt="Logo"
-          class="imgSize logo"
-        />
+        <img src="assets/imgs/logo.png" alt="Logo" class="imgSize logo" />
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -48,14 +44,25 @@
           <input id="fname" name="fname" type="text" />
 
           <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            class="message"
-          ></textarea>
+          <textarea id="message" name="message" class="message"></textarea>
           <button type="submit">Submit</button>
         </form>
       </article>
     </section>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ET9X8D0Y5P"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ET9X8D0Y5P");
+    </script>
   </body>
 </html>
