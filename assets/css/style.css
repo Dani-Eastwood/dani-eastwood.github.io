@@ -7,6 +7,9 @@ body {
 ul {
   list-style-type: none;
 }
+.styliedUl{
+  list-style-type: disc;
+}
 
 .navbar {
   display: flex;
@@ -46,6 +49,7 @@ ul {
   display: grid;
   grid-template-columns: 49% 49%;
   column-gap: 2%;
+  margin: 0 10px 0 10px;
 }
 .jobExperince {
   > h5 {
@@ -125,4 +129,10 @@ ul {
 }
 .schoolInfo{
   margin-top: 0;
+}
+.noMargin{
+  margin: 0;
+}
+.testimonials{
+  width: 95%;
 }
